@@ -11,6 +11,7 @@ local showPicker = function(opts)
   local projects = opts.projects or {}
 
   pickers.new(require("telescope.themes").get_dropdown({}), {
+    prompt_title = "SPM",
     finder = finders.new_table {
       results = projects,
       entry_maker = function(entry)
